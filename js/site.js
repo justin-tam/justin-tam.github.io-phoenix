@@ -53,6 +53,7 @@ function loadContact() {
   kwesScript.setAttribute('src', 'https://kwes.io/v2/kwes-script.js');
   kwesScript.setAttribute('charset', 'utf-8');
   document.head.appendChild(kwesScript);
+  $('.kwes-form a').first().remove();
 }
 
 function submitContact() {
