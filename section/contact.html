@@ -4,7 +4,7 @@
       <h2 class="section-heading text-uppercase">Contact Form</h2>
     </div>
   </div>
-  <div class="row text-center">
+  <div class="row">
     <div class="col-lg-12">
       <form class="kwes-form" action="https://kwes.io/api/foreign/forms/v5tK1odlYtF332CRyhtz">
 	  <fieldset>
@@ -14,19 +14,21 @@
 		  <label><i class="fa fa-exclamation-triangle"></i> Please input a valid name and email.</label>
 		</div>
 
-		<div class="position-relative"> <!-- Full Name -->
+		<div class="position-relative d-inline"> <!-- Full Name -->
 		  <i class="fa fa-user"></i>
 		  <label for="txtName" class="control-label">Full Name</label>
 		  <input type="text" class="form-control" id="txtName" name="name" placeholder="Ex: John Smith" rules="required|max:50">
-		  <input type="text" class="form-control" id="txtPhone" name="phone" placeholder="Ex: 888-888-8888" hidden>
+		  <input type="text" class="form-control" id="txtPhone" placeholder="Ex: 888-888-8888" hidden>
 		</div>
 
-		<div class="position-relative"> <!-- Email -->
+		<div class="position-relative d-inline"> <!-- Email -->
 		  <i class="fa fa-home"></i>
 		  <label for="txtEmail" class="control-label">Email Address</label>
 		  <input type="text" class="form-control" id="txtEmail" name="email" placeholder="Ex: john.smith@abc.com" rules="required|max:100">
 		</div>
 	  </fieldset>
+	      
+	  <br />
 
 	  <div class="submit-button"> <!-- Submit Button -->
 		<button type="submit" class="btn btn-primary">Submit</button>
