@@ -4,8 +4,10 @@ $(function(){
   // Load the blog elements before executing the loadBlog function
   $('#news').load("/section/news.html", function() { loadBlog(); });
   $('#about').load("/section/about.html");
-  $('#contact').load("/section/contact.html", function() { loadContact(); });
+  $('#contact').load("/section/contact.html");
   $('footer').load("/section/footer.html");
+  
+  $('window').on("pageshow", function() { loadContact(); });
 });
 
 function loadBlog(blogs = 1, arrow = 1) {
