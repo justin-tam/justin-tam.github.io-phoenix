@@ -7,7 +7,7 @@ $(function(){
   $('#contact').load("/section/contact.html");
   $('footer').load("/section/footer.html");
   
-  $('window').on("pageshow", function() { loadContact(); });
+  $(document).on('pageinit', function() { loadContact(); });
 });
 
 function loadBlog(blogs = 1, arrow = 1) {
