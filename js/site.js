@@ -6,8 +6,6 @@ $(function(){
   $('#about').load("/section/about.html");
   $('#contact').load("/section/contact.html");
   $('footer').load("/section/footer.html");
-  
-  $(document).on('pageinit', function() { loadContact(); });
 });
 
 function loadBlog(blogs = 1, arrow = 1) {
@@ -48,8 +46,4 @@ function loadBlog(blogs = 1, arrow = 1) {
       $(caption).parent().hide();
     }
   });
-}
-
-function loadContact() {
-  $('.kwes-form a').remove();
 }
