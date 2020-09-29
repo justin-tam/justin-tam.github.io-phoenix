@@ -5,23 +5,21 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-12 text-center">
       <form class="kwes-form" action="https://kwes.io/api/foreign/forms/v5tK1odlYtF332CRyhtz">
 	  <fieldset>
 		<legend>Personal Details</legend>
 
-		<div id="divError" class="position-relative" hidden> <!-- Full Name -->
-		  <label><i class="fa fa-exclamation-triangle"></i> Please input a valid name and email.</label>
-		</div>
-
-		<div class="position-relative d-inline"> <!-- Full Name -->
+		<div class="position-relative text-left"> <!-- Full Name -->
 		  <i class="fa fa-user"></i>
 		  <label for="txtName" class="control-label">Full Name</label>
 		  <input type="text" class="form-control" id="txtName" name="name" placeholder="Ex: John Smith" rules="required|max:50">
 		  <input type="text" class="form-control" id="txtPhone" placeholder="Ex: 888-888-8888" hidden>
 		</div>
+		  
+		<br />
 
-		<div class="position-relative d-inline"> <!-- Email -->
+		<div class="position-relative text-left"> <!-- Email -->
 		  <i class="fa fa-home"></i>
 		  <label for="txtEmail" class="control-label">Email Address</label>
 		  <input type="text" class="form-control" id="txtEmail" name="email" placeholder="Ex: john.smith@abc.com" rules="required|max:100">
@@ -30,28 +28,8 @@
 	      
 	  <br />
 
-	  <div class="submit-button"> <!-- Submit Button -->
+	  <div class="submit-button text-left"> <!-- Submit Button -->
 		<button type="submit" class="btn btn-primary">Submit</button>
-
-		<!-- Modal -->
-		<div id="submitModal" class="modal fade" role="dialog">
-		  <div class="modal-dialog">
-			<!-- Modal content-->
-			<div class="modal-content">
-			  <div class="modal-header">
-				<h4 class="modal-title">Profile Saved!</h4>
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-			  </div>
-			  <div class="modal-body">
-				<p>(This doesn't submit anything at this time)</p>
-			  </div>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-			  </div>
-			</div>
-		  </div>
-		</div>
-  
 	  </div>
 	<script src="https://kwes.io/v2/kwes-script.js" charset="utf-8"></script>
       </form>
