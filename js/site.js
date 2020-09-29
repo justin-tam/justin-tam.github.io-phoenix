@@ -4,10 +4,8 @@ $(function(){
   // Load the blog elements before executing the loadBlog function
   $('#news').load("/section/news.html", function() { loadBlog(); });
   $('#about').load("/section/about.html");
-  $('#contact').load("/section/contact.html");
+  $('#contact').load("/section/contact.html", function() { loadContact(); });
   $('footer').load("/section/footer.html");
-  
-  loadContact();
 });
 
 function loadBlog(blogs = 1, arrow = 1) {
@@ -51,7 +49,7 @@ function loadBlog(blogs = 1, arrow = 1) {
 }
 
 function loadContact() {
-  $('.kwes-form a').first().remove();
+  $('.kwes-form a').remove();
 }
 
 function submitContact() {
