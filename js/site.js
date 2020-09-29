@@ -49,7 +49,6 @@ function loadBlog(blogs = 1, arrow = 1) {
 }
 
 function loadContact() {
-  $('.kwes-form a').first().hide();
 }
 
 function submitContact() {
