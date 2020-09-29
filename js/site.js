@@ -4,7 +4,7 @@ $(function(){
   // Load the blog elements before executing the loadBlog function
   $('#news').load("/section/news.html", function() { loadBlog(); });
   $('#about').load("/section/about.html");
-  $('#contact').load("/section/contact.html");
+  $('#contact').load("/section/contact.html", function() { loadContact(); });
   $('footer').load("/section/footer.html");
 });
 
@@ -47,7 +47,11 @@ function loadBlog(blogs = 1, arrow = 1) {
     }
   });
 }
-  
+
+function loadContact() {
+  $('.kwes-form a').first().remove();
+}
+
 function submitContact() {
   var name = $('#txtName').val();
   var phone = $('#txtPhone').val();
