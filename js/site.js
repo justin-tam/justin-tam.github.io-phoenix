@@ -51,18 +51,3 @@ function loadBlog(blogs = 1, arrow = 1) {
 function loadContact() {
   $('.kwes-form a').remove();
 }
-
-function submitContact() {
-  var name = $('#txtName').val();
-  var phone = $('#txtPhone').val();
-  var email = $('#txtEmail').val();
-  if (name == '' || phone != '' || email == '')
-  {
-    $('#divError').show();
-    return;
-  }
-  else
-  {
-    $('#divError').hide();
-  }
-}
