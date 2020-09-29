@@ -49,9 +49,10 @@ function loadBlog(blogs = 1, arrow = 1) {
 }
 
 function loadContact() {
-  let kwesScript = document.createElement('script')
-  kwesScript.setAttribute('src', 'https://kwes.io/js/kwes.js')
-  document.head.appendChild(kwesScript)
+  const kwesScript = document.createElement('script');
+  kwesScript.setAttribute('src', 'https://kwes.io/v2/kwes-script.js');
+  kwesScript.setAttribute('charset', 'utf-8');
+  document.head.appendChild(kwesScript);
 }
 
 function submitContact() {
